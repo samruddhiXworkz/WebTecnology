@@ -1,0 +1,43 @@
+.card{
+    height: 3rem;
+    width: 3rem;
+    background-color: blue;
+    transition: transform 2s,height 2s,width 2s;
+    margin-bottom: 1rem;
+}
+.card:hover{
+    height: 7rem;
+    width: 7rem;
+    transform: rotate(360deg);
+    margin-bottom: 1rem;
+}
+.animation{
+    height: 3rem;
+    width: 3rem;
+    animation-name: cardTest;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+
+}
+@keyframes cardTest{
+    from{
+      margin-top: 40px;   background-color: blue;
+    }
+   to{
+     margin-left: 15px; background-color: red;
+    }
+}
+.box{
+    height: 3rem;
+    width: 3rem;
+    animation-name: animationbox;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes animationbox{
+    0%{ margin-left:0rem ;background-color: antiquewhite;}
+    25%{margin-top:2rem; background-color: orange;}
+    50%{margin-top: 2rem;margin-left: 2rem; background-color: blueviolet;}
+    75%{ margin-top: 2rem;margin-left: 0rem; background-color: red;}
+    100%{margin-top: orem;margin-left: 0rem; background-color: chartreuse;}
+}
